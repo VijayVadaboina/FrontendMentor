@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: 50px auto;
+    padding:50px 30px ;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    max-width: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.img img{
+    max-width: 100%;
+    display: inherit;
+}
+.info{
+padding: 35px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+h6.cat{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+h2.name{
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+}
+P.description{
+    color:hsl(228, 12%, 48%);
+    line-height: 1.6rem;
+}
+.price{
+    display:flex;
+    flex-direction: row;
+}
+.newprice{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size:30px;
+    padding-right: 25px;
+}
+.oldprice{
+    color:hsl(228, 12%, 48%);
+    font-family: 'Fraunces', serif;
+    text-decoration: line-through;
+}
+button.cartimg:hover{
+    background-color: hsl(158, 36%, 37%);
+}
+button.cartimg{
+    max-width: 100%;
+    background-color: hsl(158, 36%, 20%);
+    border:none;
+    padding:12px 80px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight:700;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+}
+button.cartimg.img{
+    padding-right: 15px;
+}
